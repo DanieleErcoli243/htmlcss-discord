@@ -32,6 +32,7 @@ body{
     background-color: white;
     color: black;
     font-size: 14px;
+    cursor: pointer;
 }
 
 a{
@@ -39,6 +40,11 @@ a{
     text-decoration: none;
     vertical-align: middle;
     line-height: 50px;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
 }
 
 /* stile dell'intestazione */
@@ -53,38 +59,35 @@ header{
 
 .nav-bar{
     width: 800px;
-    background-color: orange;
-    border: 2px dashed blue;
     height: 50px;
     display: flex;
     flex-wrap: wrap;
 }
 
 a.menu{
-    text-align: center;
+    
 }
 
-a.log-in{
-    text-align: left;
+.nav-child.log-in{
+   padding-left: 135px;
 }
 
 .nav-child{
     width: calc(100% / 4);
     height: 100%;
-    border: 2px dashed currentColor;
-    padding: 10px 10px 0 0;
     line-height: 100%;    
 }
 
 #logo{
-    width: 60%;
+    width: 50%;
+    margin-top: 15px;
 }
 
 .options{
     width: calc(100% / 2);
-    border: 2px dashed currentColor;
     height: 100%;
     padding-left: 10px;
+    justify-content: space-evenly;
 }
 
 .intro{
