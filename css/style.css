@@ -10,34 +10,38 @@ body{
     background-color: white;
 }
 
+p{
+    line-height: 2;
+}
+
 /* Utili */
 
 .container{
     min-height: 500px;
     background-color: transparent;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
+
 .card{
-    min-height: 450px;
-    width: 800px;
-    display: flex;
+    text-align: left;
 }
 
 .button{
-    border-radius: 10px;
-    padding: 5px 10px;
+    border-radius: 20px;
+    padding: 10px 15px;
     background-color: white;
     color: black;
-    font-size: 14px;
+    font-size: 19px;
     cursor: pointer;
 }
 
 .button.black{
     color: white;
     background-color: black;
+    margin-left: 20px;
 }
 
 a{
@@ -128,8 +132,29 @@ button > a{
     height: 100%;
 }
 
+/* main */
+
+.image{
+    width: 480px;
+    
+
+.section-title{
+    color: black;
+    font-weight: 700;
+    padding-top: 20px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+
+
+.card p{
+    color: black;
+
+}
+
 .grey{
-    background-color: rgb(115, 114, 114);
+    background-image: url(../img/img/wave.svg);
 }
 
 
