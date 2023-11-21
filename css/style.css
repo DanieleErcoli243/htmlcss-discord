@@ -45,6 +45,11 @@ p{
     cursor: pointer;
 }
 
+.button.ligthblue{
+    color: white;
+    background-color: rgb(146, 183, 235);
+}
+
 .button.black{
     color: white;
     background-color: black;
@@ -150,7 +155,6 @@ button > a{
     padding-top: 40px;
     color: black;
     font-weight: 700;
-    padding-top: 20px;
     line-height: 1;
     margin-bottom: 10px;
 }
@@ -173,7 +177,7 @@ p{
     background-color: lightgray;
 }
 
-.wave.h3{
+h3{
     background-image: url(../img/img/stars.svg);
     margin-bottom: 10px;
 }
@@ -231,6 +235,8 @@ footer{
     min-height: 500px;
     max-width: 800px;
     border-bottom: 2px solid grey;
+    display: flex;
+    width: 800px;
 }
 
 .slogan{
