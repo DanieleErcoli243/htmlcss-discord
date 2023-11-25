@@ -10,212 +10,294 @@ body{
     background-color: white;
 }
 
+/* generici */
+
+h1{
+    font-size: 42px;
+    color: white;
+    margin-top: 30px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 34px;
+    padding-left: 140px;
+    margin-bottom: 20px;
+}
+
 p{
     line-height: 2;
+    font-size: 14px;
+    padding-left: 140px
+}
+
+h4{
+    color: rgb(58, 83, 186);
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+
+h3{
+    margin-bottom: 30px;
+    background-image: url(../img/img/stars.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h6{
+    color: rgb(58, 83, 186);
+    margin-top: 30px;
 }
 
 /* Utili */
 
-.container{
-    min-height: 500px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.log-in{
+    font-size: 12px;
 }
 
-.container-align{
-    min-height: 500px;
+.fa-down-long{
+    color: black;
+}
+
+ul a{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.container{
     background-color: transparent;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 225px;
 }
 
 .card{
-    text-align: left;
-}
-
-.button{
-    border-radius: 40px;
-    padding: 10px 15px;
-    background-color: white;
-    color: black;
-    font-size: 19px;
-    cursor: pointer;
-}
-
-.button.ligthblue{
-    color: white;
-    background-color: rgb(146, 183, 235);
-}
-
-.button.black{
-    color: white;
-    background-color: black;
-    margin-left: 20px;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-    vertical-align: middle;
-    line-height: 50px;
-    cursor: pointer;
-}
-
-.flex{
+    max-width: 945px;
     display: flex;
-    justify-content: space-evenly;
 }
+
+.left{
+    padding-left: 0;
+}
+
 
 /* stile dell'intestazione */
 
 header{
     min-height: 70px;
     background-image: url(../img/img/jumbo.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-p{
+    color: white;
+    padding: 0;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+.upper-header{
+    color: rgb(38, 103, 223);
+    height: 70px;
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 
 .nav-bar{
-    width: 800px;
+    width: 945px;
     height: 50px;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
 }
 
-
-
-.nav-child.log-in{
-   padding-left: 135px;
+#logo {
+    display: block;
+    margin-top: 10px;
+    
 }
 
 .nav-child{
     width: calc(100% / 4);
-    height: 100%;
-    line-height: 100%;    
+    height: 50px;
+    line-height: 50px;
+    text-align: end;
 }
 
-#logo{
-    width: 50%;
-    margin-top: 15px;
-}
+
 
 .options{
     width: calc(100% / 2);
     height: 100%;
-    padding-left: 10px;
-    justify-content: space-evenly;
 }
 
+li {
+    list-style-type: none;
+}
+
+.o-list{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+[class*="btn"]{
+    border-radius: 20px;
+    padding: 10px 15px; 
+    text-decoration: none;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+}    
+
+
+
+.btn.black{
+    padding: 15px 20px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+}
+
+
+
+.btn.blue{
+    color: white;
+    background-color: rgb(58, 83, 186);
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 115px;
+}
+
+.fa-down-long.blue{
+    color: white;
+}
+
+.btn.lightblue{
+    padding: 15px 20px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(76, 106, 226);
+}
+
+.lower-header{
+    min-height: 500px;
+}    
+
 .intro{
-    margin-top: 100px;
-    margin-bottom: 40px;
+    max-width: 50%;
+    min-height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
 }
 
 .text-button{
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
     width: 600px;
+    min-height: 350px;
+    background-color: pink;
 }
 
-/* intestazione */
+/* stile dei blocchi */
 
-h1{
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 30px;
+.container.fandom{
+    margin-top: 225px;
 }
 
-.header-p{
-    margin-bottom: 20px;
-    color: white;
+.container.grey{
+    background-color: rgba(241, 235, 235, 0.544);
+    position: relative;
+    margin-bottom: 0;
 }
 
-button > a{
-    height: 100%;
-}
-
-/* main */
-
-.image{
-    width: 480px;
-}   
-
-.card.h2{
-    padding-top: 40px;
-    color: black;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 10px;
-}
-
-
-
-
-p{
-    color: black;
-    line-height: 2;
-    
-}
-
-.wave{
-    color: white;
-}
-
-.grey{
+.container.grey::before{
+    content: "";
     background-image: url(../img/img/wave.svg);
-    background-color: lightgray;
+    display: block;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 100%;
+    opacity: 0.04;
+
 }
 
-h3{
-    background-image: url(../img/img/stars.svg);
-    margin-bottom: 10px;
+
+.container.grey.upside-down::after{
+    content: "";
+    background-image: url(../img/img/wave.svg);
+    display: block;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100%;
+    opacity: 0.04;
+    rotate: 0.5turn;
 }
 
 .picture{
-    background-color: blue;
     width: 60%;
 }
 
 .text{
-    background-color: pink;
-    min-height: 450px;
     width: 40%;
 }
 .picture-invitation{
-    background-color: blue;
     width: 70%;
 }
 
 .text-invitation{
-    background-color: pink;
     width: 30%;
 }
+
 .picture-channel{
-    background-color: blue;
-    width: 60%;
+    width: calc(945px - 370px);
 }
 
 .text-channel{
-    background-color: pink;
-    width: 40%;
+    width: 370px;
 }
 
 
 .card-technology{
-    background-color: rgb(2, 88, 2);
     min-height: 550px;
     width: 800px;
+}
+
+.small-container{
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 /* stile pie' di pagina */
@@ -225,30 +307,51 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 505px;
     flex-wrap: wrap;
     align-content: center;
 }
 
 .fc{
     margin-top: 5px;
-    min-height: 500px;
-    max-width: 800px;
+    max-width: 100%;
     border-bottom: 2px solid grey;
-    display: flex;
-    width: 800px;
 }
 
 .slogan{
-    background-color: rgb(228, 87, 136);
-    min-height: 450px;
-    width: 30%;
+    border-bottom: 2px solid currentColor;
 }
+
+.ita{
+    max-width: 100%;
+    height: 17px;
+    display: inline-block;
+}
+
+.language{
+    color: white;
+}
+
+
+.fa-chevron-down{
+    color: white;
+    font-size: 17px;
+}
+
+.socials{
+    justify-content: flex-start;
+    gap: 20px;
+    color: white;
+}
+
+i{
+    color: white;
+    font-size: 14px;
+}
+
 .app-info{
-    min-height: 450px;
     width: 70%;
-    background-color: rgb(75, 176, 143);
     display: flex;
+    gap: 50px;
 }
 
 hr{
@@ -257,27 +360,25 @@ hr{
 
 .info{
     width: calc(70% - 25%);
-    border: 2px dashed black;
     height: 100%;
     background-color: transparent;
 }
 
 
 
-.footer-bottom{
+.logo-button{
     width: 800px;
     height: 70px;
-    background-color: aquamarine;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
 }
 
-.bottom-child{
+.button-child{
     height: 40px;
     width: 100px;
-    background-color: pink;
-    border: 2px dashed black;
+    padding-top: 10px
+    
 }
 
