@@ -1,3 +1,8 @@
+Discord
+This project is about recreating the homepage of Discord. We were suggested to create the main structure, with some divs with different background colours, and then to fill it with the contents. We have also been challenged to recreate the waves in the background.
+ 
+
+
 Ciao Ragazzi,
 Esercizio di oggi: Discord
 cartella/repo: htmlcss-discord
